@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 ###先展明自己的测试程序程序的结构如下：">
+<meta name="description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 先展明自己的测试程序程序的结构如下：程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：TestJarRun代码如下：123456789101112131415161718192021222324import org.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="testjarrun">
+<meta property="og:title" content="java打包到服务器上运行">
 <meta property="og:url" content="http://yoursite.com/2018/03/02/testjarrun/index.html">
 <meta property="og:site_name" content="不坠青云志,满腹经纶">
-<meta property="og:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 ###先展明自己的测试程序程序的结构如下：">
+<meta property="og:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 先展明自己的测试程序程序的结构如下：程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：TestJarRun代码如下：123456789101112131415161718192021222324import org.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/03/02/testjarrun/img/testjarrun/1.png">
-<meta property="og:updated_time" content="2018-03-02T03:28:28.693Z">
+<meta property="og:image" content="http://yoursite.com/img/testjarrun/1.png">
+<meta property="og:updated_time" content="2018-03-02T07:39:00.102Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="testjarrun">
-<meta name="twitter:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 ###先展明自己的测试程序程序的结构如下：">
-<meta name="twitter:image" content="http://yoursite.com/2018/03/02/testjarrun/img/testjarrun/1.png">
+<meta name="twitter:title" content="java打包到服务器上运行">
+<meta name="twitter:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 先展明自己的测试程序程序的结构如下：程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：TestJarRun代码如下：123456789101112131415161718192021222324import org.">
+<meta name="twitter:image" content="http://yoursite.com/img/testjarrun/1.png">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>testjarrun | 不坠青云志,满腹经纶</title>
+  <title>java打包到服务器上运行 | 不坠青云志,满腹经纶</title>
   
 
 
@@ -281,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">testjarrun</h1>
+          <h1 class="post-title" itemprop="name headline">java打包到服务器上运行</h1>
         
 
         <div class="post-meta">
@@ -333,7 +333,7 @@
 
           
           
-             <span id="/2018/03/02/testjarrun/" class="leancloud_visitors" data-flag-title="testjarrun">
+             <span id="/2018/03/02/testjarrun/" class="leancloud_visitors" data-flag-title="java打包到服务器上运行">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -365,7 +365,13 @@
 
       
         <p>今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。</p>
-<p>###先展明自己的测试程序<br>程序的结构如下：<br><img src="img/testjarrun/1.png" alt="你想输入的替代文字"></p>
+<h3 id="先展明自己的测试程序"><a href="#先展明自己的测试程序" class="headerlink" title="先展明自己的测试程序"></a>先展明自己的测试程序</h3><p>程序的结构如下：<br><img src="/img/testjarrun/1.png" alt="你想输入的替代文字"><br>程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：<br>TestJarRun代码如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.json.JSONException;</span><br><span class="line"><span class="keyword">import</span> org.json.JSONObject;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestJarRun</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		System.out.println(args[<span class="number">0</span>]);</span><br><span class="line">		System.out.println(args[<span class="number">1</span>]);</span><br><span class="line">		JSONObject wangxiaoer = <span class="keyword">new</span> JSONObject();<span class="comment">// new一个JSONObject对象，命名为wangxiaoer</span></span><br><span class="line">		Object nullObj = <span class="keyword">null</span>; <span class="comment">// 解决put中因二义性引起的编译错误</span></span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			wangxiaoer.put(<span class="string">"name"</span>, <span class="string">"王小二"</span>);</span><br><span class="line">			wangxiaoer.put(<span class="string">"age"</span>, <span class="number">25.2</span>);</span><br><span class="line">			wangxiaoer.put(<span class="string">"birthday"</span>, <span class="string">"1990-01-01"</span>);</span><br><span class="line">			wangxiaoer.put(<span class="string">"school"</span>, <span class="string">"蓝翔"</span>);</span><br><span class="line">			wangxiaoer.put(<span class="string">"major"</span>, <span class="keyword">new</span> String[] &#123; <span class="string">"理发"</span>, <span class="string">"挖掘机"</span> &#125;);</span><br><span class="line">			wangxiaoer.put(<span class="string">"has_girlfriend"</span>, <span class="keyword">false</span>);</span><br><span class="line">			wangxiaoer.put(<span class="string">"car"</span>, nullObj);</span><br><span class="line">			wangxiaoer.put(<span class="string">"house"</span>, nullObj);</span><br><span class="line">			System.out.println(wangxiaoer.toString());</span><br><span class="line">		&#125; <span class="keyword">catch</span> (JSONException e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>TestMain代码如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span>  <span class="class"><span class="keyword">class</span> <span class="title">TestMain</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"手动指定的主类"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="打包方式"><a href="#打包方式" class="headerlink" title="打包方式"></a>打包方式</h3><p>我使用的是Eclipse来打jar包，导出类型选择的是runnableJar(在这里有个小问题就是如果选择jar类型会导致外部包无法引入，进而运行的时候报找不到某个类的错误,在导出的时候我选择的TestJaRun做主类)</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>在服务器上运行的测试命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> java -jar TestJarRun.jar 2 1  </span><br><span class="line">`</span><br></pre></td></tr></table></figure></p>
+<p>运行结果为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1</span><br><span class="line">&#123;&quot;birthday&quot;:&quot;1990-01-01&quot;,&quot;major&quot;:[&quot;理发&quot;,&quot;挖掘机&quot;],&quot;school&quot;:&quot;蓝翔&quot;,&quot;name&quot;:&quot;王小irlfriend&quot;:false,&quot;age&quot;:25.2&#125;</span><br></pre></td></tr></table></figure></p>
+<p>手动指定主类：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -cp TestJarRun.jar TestMain</span><br></pre></td></tr></table></figure></p>
+<p>运行结果为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">手动指定的主类</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -424,6 +430,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/03/02/mongo/" rel="prev" title="管理MongoDB数据库">
+                管理MongoDB数据库 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -479,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -495,7 +514,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -506,7 +525,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -531,6 +550,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#先展明自己的测试程序"><span class="nav-number">1.</span> <span class="nav-text">先展明自己的测试程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打包方式"><span class="nav-number">2.</span> <span class="nav-text">打包方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">3.</span> <span class="nav-text">测试</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
