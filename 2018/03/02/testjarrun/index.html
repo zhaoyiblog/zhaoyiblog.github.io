@@ -14,8 +14,19 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2" rel="stylesheet">
 
 
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
 
 
 
@@ -83,11 +94,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="java打包到服务器上运行">
 <meta property="og:url" content="http://yoursite.com/2018/03/02/testjarrun/index.html">
-<meta property="og:site_name" content="不坠青云志,满腹经纶">
+<meta property="og:site_name">
 <meta property="og:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 先展明自己的测试程序程序的结构如下：程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：TestJarRun代码如下：123456789101112131415161718192021222324import org.">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/img/testjarrun/1.png">
-<meta property="og:updated_time" content="2018-03-02T07:39:00.102Z">
+<meta property="og:updated_time" content="2018-03-07T14:28:33.720Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java打包到服务器上运行">
 <meta name="twitter:description" content="今天遇到点小需求，采用上传jar包到服务器并且指定参数运行会比较方便，因此做了一个测试程序，简单讲明如何实现。 先展明自己的测试程序程序的结构如下：程序中有两个类,TestJarRun用来测试在运行jar包时输入参数，TestMain用来测试运行jar包时指定主类运行：TestJarRun代码如下：123456789101112131415161718192021222324import org.">
@@ -104,7 +115,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"flipXIn","post_header":"slideUpIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideRightIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -127,7 +138,7 @@
 
 
 
-  <title>java打包到服务器上运行 | 不坠青云志,满腹经纶</title>
+  <title>java打包到服务器上运行 | </title>
   
 
 
@@ -157,7 +168,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不坠青云志,满腹经纶</span>
+        <span class="site-title"></span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -273,7 +284,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不坠青云志,满腹经纶">
+      <meta itemprop="name" content="">
     </span>
 
     
@@ -316,8 +327,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
+                  <a href="/category/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
                   </a>
                 </span>
 
@@ -348,6 +359,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  434
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
           
 
@@ -358,7 +400,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
@@ -413,6 +455,21 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -508,7 +565,7 @@
                 alt="赵祎" />
             
               <p class="site-author-name" itemprop="name">赵祎</p>
-              <p class="site-description motion-element" itemprop="description">BlogClub</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -518,7 +575,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -535,6 +592,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -591,14 +657,19 @@
   <span class="author" itemprop="copyrightHolder">赵祎</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">4.9k</span>
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
 
 
 
@@ -627,6 +698,12 @@
     
 
     
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
 
   </div>
 
@@ -648,6 +725,8 @@
 
   
 
+
+  
 
 
 
@@ -687,6 +766,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
   
 
 
@@ -887,12 +971,54 @@
 
   
   
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+  
+
 
   
 
   
 
   
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 
 </body>
 </html>
