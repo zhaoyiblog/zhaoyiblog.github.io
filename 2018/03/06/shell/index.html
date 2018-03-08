@@ -99,17 +99,17 @@
 
 
 
-<meta name="description" content="shell批量导出json需求是需求导出50多个集合的json文件，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#count=$#while [ $count -gt 0 ]do  echo &amp;quot;jsonexp">
+<meta name="description" content="shell批量导出json需求是需求导出50多个集合的json文件，如果使用循环遍历数据库写出json文件的话，不仅读取数据库会耗时巨大，而且也给IO带来了巨大的压力，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#co">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用shell批量导出MongoDB集合的json文件">
 <meta property="og:url" content="http://yoursite.com/2018/03/06/shell/index.html">
 <meta property="og:site_name">
-<meta property="og:description" content="shell批量导出json需求是需求导出50多个集合的json文件，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#count=$#while [ $count -gt 0 ]do  echo &amp;quot;jsonexp">
+<meta property="og:description" content="shell批量导出json需求是需求导出50多个集合的json文件，如果使用循环遍历数据库写出json文件的话，不仅读取数据库会耗时巨大，而且也给IO带来了巨大的压力，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#co">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T09:38:36.445Z">
+<meta property="og:updated_time" content="2018-03-08T16:07:36.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用shell批量导出MongoDB集合的json文件">
-<meta name="twitter:description" content="shell批量导出json需求是需求导出50多个集合的json文件，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#count=$#while [ $count -gt 0 ]do  echo &amp;quot;jsonexp">
+<meta name="twitter:description" content="shell批量导出json需求是需求导出50多个集合的json文件，如果使用循环遍历数据库写出json文件的话，不仅读取数据库会耗时巨大，而且也给IO带来了巨大的压力，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：12345678910#! /bin/shecho &amp;quot;start export,collections numbers is&amp;quot;echo $#co">
 
 
 
@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  332
+                  375
                 </span>
               
 
@@ -413,7 +413,7 @@
       
 
       
-        <h3 id="shell批量导出json"><a href="#shell批量导出json" class="headerlink" title="shell批量导出json"></a>shell批量导出json</h3><p>需求是需求导出50多个集合的json文件，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/sh</span><br><span class="line">echo &quot;start export,collections numbers is&quot;</span><br><span class="line">echo $#</span><br><span class="line">count=$#</span><br><span class="line">while [ $count -gt 0 ]</span><br><span class="line">do</span><br><span class="line">  echo &quot;jsonexport&quot; |  mongoexport -u json -p -d Chemical_Journal -c $1 --port 40027 -o /home/keger/zy/$1.json</span><br><span class="line">  let count=count-1</span><br><span class="line">  shift</span><br><span class="line">done</span><br></pre></td></tr></table></figure></p>
+        <h3 id="shell批量导出json"><a href="#shell批量导出json" class="headerlink" title="shell批量导出json"></a>shell批量导出json</h3><p>需求是需求导出50多个集合的json文件，如果使用循环遍历数据库写出json文件的话，不仅读取数据库会耗时巨大，而且也给IO带来了巨大的压力，因此写了以下几行代码来实现，shell语言新手，不完善之处，请指正：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/sh</span><br><span class="line">echo &quot;start export,collections numbers is&quot;</span><br><span class="line">echo $#</span><br><span class="line">count=$#</span><br><span class="line">while [ $count -gt 0 ]</span><br><span class="line">do</span><br><span class="line">  echo &quot;jsonexport&quot; |  mongoexport -u json -p -d Chemical_Journal -c $1 --port 40027 -o /home/keger/zy/$1.json</span><br><span class="line">  let count=count-1</span><br><span class="line">  shift</span><br><span class="line">done</span><br></pre></td></tr></table></figure></p>
 <p>代码不过多解释，使用时需要注意以下几点：<br>1）参数为集合的名字，参数输入时已空格为单位<br>2）注意集合中不能出现example’s这样的形式</p>
 <h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>在这样处理完了之后,导出的json文件的是这样的<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">"_id"</span> : &#123; <span class="attr">"$oid"</span> : <span class="string">"5a9d0d65d01029aff65a68d5"</span> &#125;, <span class="attr">"key"</span> : <span class="number">1</span> &#125;</span><br><span class="line">&#123; <span class="attr">"_id"</span> : &#123; <span class="attr">"$oid"</span> : <span class="string">"5a9d0d70d01029aff65a68d6"</span> &#125;, <span class="attr">"key"</span> : <span class="number">2</span> &#125;</span><br></pre></td></tr></table></figure></p>
 <p>而根据需求希望得到确实这样的<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[&#123; <span class="attr">"_id"</span> : &#123; <span class="attr">"$oid"</span> : <span class="string">"5a9d0d65d01029aff65a68d5"</span> &#125;, <span class="attr">"key"</span> : <span class="number">1</span> &#125;</span><br><span class="line">,&#123; <span class="attr">"_id"</span> : &#123; <span class="attr">"$oid"</span> : <span class="string">"5a9d0d70d01029aff65a68d6"</span> &#125;, <span class="attr">"key"</span> : <span class="number">2</span> &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
@@ -669,7 +669,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.9k</span>
+    <span title="Site words total count">5.2k</span>
   
 </div>
 
