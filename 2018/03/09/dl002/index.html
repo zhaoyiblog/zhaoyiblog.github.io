@@ -88,7 +88,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="机器学习,深度学习," />
 
 
 
@@ -99,17 +99,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="什么是决策树（decision tree）决策树是一个类似于流程图的树结构：其中每个内部节点表示在一个属性上的测试，每个分支代表一个属性输出，二每个树叶节点代表类或者类分布。输的最顶层是根节点 熵（entropy）概念：一条信息的信息量大小和他的不确定性有直接的关系，要搞清楚一件非常不确定的事情，或者是我们一无所知的事情，需要了解大量的信息==信息量的度量就等于不确定性的多少。 比特（bit）来衡">
+<meta name="keywords" content="机器学习,深度学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/02/05/hello-world/index.html">
+<meta property="og:title" content="深度学习之决策树学习">
+<meta property="og:url" content="http://yoursite.com/2018/03/09/dl002/index.html">
 <meta property="og:site_name" content="├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="什么是决策树（decision tree）决策树是一个类似于流程图的树结构：其中每个内部节点表示在一个属性上的测试，每个分支代表一个属性输出，二每个树叶节点代表类或者类分布。输的最顶层是根节点 熵（entropy）概念：一条信息的信息量大小和他的不确定性有直接的关系，要搞清楚一件非常不确定的事情，或者是我们一无所知的事情，需要了解大量的信息==信息量的度量就等于不确定性的多少。 比特（bit）来衡">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-05T08:36:20.368Z">
+<meta property="og:updated_time" content="2018-03-09T09:41:08.871Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="深度学习之决策树学习">
+<meta name="twitter:description" content="什么是决策树（decision tree）决策树是一个类似于流程图的树结构：其中每个内部节点表示在一个属性上的测试，每个分支代表一个属性输出，二每个树叶节点代表类或者类分布。输的最顶层是根节点 熵（entropy）概念：一条信息的信息量大小和他的不确定性有直接的关系，要搞清楚一件非常不确定的事情，或者是我们一无所知的事情，需要了解大量的信息==信息量的度量就等于不确定性的多少。 比特（bit）来衡">
 
 
 
@@ -139,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/05/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/09/dl002/"/>
 
 
 
 
 
-  <title>Hello World | ├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫</title>
+  <title>深度学习之决策树学习 | ├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫</title>
   
 
 
@@ -282,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/09/dl002/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -299,7 +300,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">深度学习之决策树学习</h1>
         
 
         <div class="post-meta">
@@ -311,8 +312,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-05T12:09:35+08:00">
-                2018-02-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-09T17:08:58+08:00">
+                2018-03-09
               </time>
             
 
@@ -334,8 +335,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/后台/" itemprop="url" rel="index">
-                    <span itemprop="name">后台</span>
+                  <a href="/category/深度学习/" itemprop="url" rel="index">
+                    <span itemprop="name">深度学习</span>
                   </a>
                 </span>
 
@@ -351,7 +352,7 @@
 
           
           
-             <span id="/2018/02/05/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2018/03/09/dl002/" class="leancloud_visitors" data-flag-title="深度学习之决策树学习">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -376,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  78
+                  212
                 </span>
               
 
@@ -413,15 +414,10 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="什么是决策树（decision-tree）"><a href="#什么是决策树（decision-tree）" class="headerlink" title="什么是决策树（decision tree）"></a>什么是决策树（decision tree）</h3><p>决策树是一个类似于流程图的树结构：其中每个内部节点表示在一个属性上的测试，每个分支代表一个属性输出，二每个树叶节点代表类或者类分布。输的最顶层是根节点</p>
+<h3 id="熵（entropy）概念："><a href="#熵（entropy）概念：" class="headerlink" title="熵（entropy）概念："></a>熵（entropy）概念：</h3><p>一条信息的信息量大小和他的不确定性有直接的关系，要搞清楚一件非常不确定的事情，或者是我们一无所知的事情，需要了解大量的信息==信息量的度量就等于不确定性的多少。</p>
+<p>比特（bit）来衡量信息的多少<br>H(X)=-<br>变量的不确定性越大，熵就越大</p>
+<h3 id="决策树归纳算法（ID3）"><a href="#决策树归纳算法（ID3）" class="headerlink" title="决策树归纳算法（ID3）"></a>决策树归纳算法（ID3）</h3><p>选择属性判断节点：<br>信息获取量（Information Gain）:Gain（A）=Info(D)-info_A(D)</p>
 
       
     </div>
@@ -461,6 +457,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
+          
+            <a href="/tags/深度学习/" rel="tag"># 深度学习</a>
+          
+        </div>
+      
 
       
       
@@ -485,14 +489,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/09/dl001/" rel="next" title="深度学习基本概念">
+                <i class="fa fa-chevron-left"></i> 深度学习基本概念
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/07/numpy/" rel="prev" title="numpy">
-                numpy <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/10/os001/" rel="prev" title="os001">
+                os001 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -579,7 +587,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -590,7 +598,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -601,7 +609,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -634,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是决策树（decision-tree）"><span class="nav-number">1.</span> <span class="nav-text">什么是决策树（decision tree）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#熵（entropy）概念："><span class="nav-number">2.</span> <span class="nav-text">熵（entropy）概念：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#决策树归纳算法（ID3）"><span class="nav-number">3.</span> <span class="nav-text">决策树归纳算法（ID3）</span></a></li></ol></div>
             
 
           </div>
@@ -668,7 +676,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">5.6k</span>
+    <span title="Site words total count">6.1k</span>
   
 </div>
 
