@@ -99,18 +99,18 @@
 
 
 
-<meta name="description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。  数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问">
+<meta name="description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。 数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。 关系型数据库管理系统（RDBMS）。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问  ###">
 <meta name="keywords" content="数据库原理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据库学习001">
 <meta property="og:url" content="http://yoursite.com/2018/03/10/db001/index.html">
 <meta property="og:site_name" content="├┝┞┟┠┡┢┣┤┥┦┧┨┩┪┫">
-<meta property="og:description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。  数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问">
+<meta property="og:description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。 数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。 关系型数据库管理系统（RDBMS）。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问  ###">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-10T13:57:25.891Z">
+<meta property="og:updated_time" content="2018-03-10T14:05:35.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据库学习001">
-<meta name="twitter:description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。  数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问">
+<meta name="twitter:description" content="专有名词 数据库（DB）：具有完整性和持久性的数据集合。 数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。 关系型数据库管理系统（RDBMS）。   DBMS特征 数据访问的高效和可扩展性（例如索引和分布式系统） 缩短应用开发时间（便捷） 数据独立性（物理数据独立性和逻辑数据独立性） 数据完整性和安全性 并发访问  ###">
 
 
 
@@ -323,6 +323,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/数据库原理/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库原理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -355,7 +377,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  126
+                  138
                 </span>
               
 
@@ -393,10 +415,9 @@
 
       
         <h3 id="专有名词"><a href="#专有名词" class="headerlink" title="专有名词"></a>专有名词</h3><ol>
-<li><p>数据库（DB）：具有完整性和持久性的数据集合。</p>
-</li>
-<li><p>数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。</p>
-</li>
+<li>数据库（DB）：具有完整性和持久性的数据集合。</li>
+<li>数据库管理系统（DBMS）：数据库+一组用以访问，更新和管理这些数据的程序。</li>
+<li>关系型数据库管理系统（RDBMS）。 </li>
 </ol>
 <h3 id="DBMS特征"><a href="#DBMS特征" class="headerlink" title="DBMS特征"></a>DBMS特征</h3><ol>
 <li>数据访问的高效和可扩展性（例如索引和分布式系统）</li>
@@ -405,6 +426,7 @@
 <li>数据完整性和安全性</li>
 <li>并发访问</li>
 </ol>
+<p>### </p>
 
       
     </div>
@@ -483,6 +505,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/13/gensim001/" rel="prev" title="gensim库">
+                gensim库 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -568,7 +594,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -579,7 +605,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -590,7 +616,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -657,7 +683,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.1k</span>
+    <span title="Site words total count">8.8k</span>
   
 </div>
 
